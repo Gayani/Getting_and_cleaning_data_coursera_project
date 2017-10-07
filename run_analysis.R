@@ -12,16 +12,16 @@ if (!file.exists("UCI HAR Dataset")) {
 }
 
 #Read activity labels
-activityLabels = read.table("UCI HAR Dataset/activity_labels.txt")
+activityLabels <- read.table("UCI HAR Dataset/activity_labels.txt")
 
 #Read features and extract features related to mean and standard deviation
-features = read.table("UCI HAR Dataset/features.txt")
+features <- read.table("UCI HAR Dataset/features.txt")
 selectedFeatures <- grep(".*mean.*|.*std.*", features[,2])
 
 #Substitute extracted feature names with more readable names
 selectedFeatures.names <- features[selectedFeatures,2]
-selectedFeatures.names = gsub('-mean', 'Mean', selectedFeatures.names)
-selectedFeatures.names = gsub('-std', 'Std', selectedFeatures.names)
+selectedFeatures.names <- gsub('-mean', 'Mean', selectedFeatures.names)
+selectedFeatures.names <- gsub('-std', 'Std', selectedFeatures.names)
 selectedFeatures.names <- gsub('[-()]', '', selectedFeatures.names)
 
 #Load the training datasets

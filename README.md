@@ -3,14 +3,13 @@
 One of the most exciting areas in all of data science right now is wearable computing, Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users.
 refer this [article](http://www.insideactivitytracking.com/data-science-activity-tracking-and-the-battle-for-the-worlds-top-sports-brand/)  for more information.
 
-The data related to this project was collected from the accelerometer and gyroscope of the Samsung Galaxy S smartphone [Source]{http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones}. 
+The data related to this project was collected from the accelerometer and gyroscope of the Samsung Galaxy S smartphone [Source](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). 
 The objective of this project is cleaning and preparing a tidy datset that can be used for later analysis.
 
 ## Input data
-The [Zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) contains the input data for this project.
+This [Zip file](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) contains the input data for this project.
 
 The dataset includes the following files:
-=========================================
 
 - 'README.txt'
 
@@ -28,7 +27,7 @@ The dataset includes the following files:
 
 - 'test/y_test.txt': Test labels.
 
-The following files are available for the train and test data. Their descriptions are equivalent. 
+The following files are available for the train and test data. Their descriptions are equivalent to
 
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 
@@ -41,7 +40,6 @@ The following files are available for the train and test data. Their description
 ## Project files
 
 This project repository contains the following files:
-=========================================
 
 - 'README.md': Overviw of the dataset/project files and steps for creating a tidy dataset.
 - 'tidy_data.txt': The tidy dataset.
@@ -52,8 +50,8 @@ This project repository contains the following files:
 
 The R script run_analysis.R was used to create the tidy data set. 
 
-run_analysis.R script includes following steps
-=========================================
+The run_analysis.R script includes following steps
+
 1. Download and unzip input data if it doesn't exist.
 2. Read activity labels.
 3. Read features, extract features related to mean and standard deviation.
